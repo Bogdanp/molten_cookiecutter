@@ -1,0 +1,5 @@
+{
+  "repo_name": "example",
+  "package_name": "{{cookiecutter.repo_name}}",
+  "description": "An example molten app."
+}

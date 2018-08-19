@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+if [ -z "$VIRTUAL_ENV" ]; then
+    echo "warning: you are not in a virtualenv."
+    exit 1
+fi
+
+pip install -U pip
+pip install pip-tools
+pip-sync requirements-dev.txt requirements.txt

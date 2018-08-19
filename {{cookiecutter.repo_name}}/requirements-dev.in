@@ -1,0 +1,6 @@
+flake8
+flake8-quotes
+isort
+jedi
+pytest
+pytest-cov

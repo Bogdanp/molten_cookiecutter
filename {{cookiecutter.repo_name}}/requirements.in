@@ -1,0 +1,8 @@
+alembic
+gunicorn
+jinja2
+molten
+psycopg2-binary
+sqlalchemy
+toml
+whitenoise[brotli]
