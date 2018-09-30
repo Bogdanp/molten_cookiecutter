@@ -11,12 +11,18 @@ Run `./scripts/bootstrap` in a terminal.  This will install
 To run the app you'll need to have Postgres running.  Create a
 database called `{{cookiecutter.package_name}}` and another called
 `{{cookiecutter.package_name}}_tests` and grant the `postgres` user
-access to both.
+access to both.  Finally, run `alembic upgrade head` to migrate the
+database.
 
 
 ## Running the development server
 
 Run `./scripts/runserver`.
+
+
+## Running an interactive interpreter
+
+Run `./scripts/interpreter`.
 
 
 ## Dependency management
