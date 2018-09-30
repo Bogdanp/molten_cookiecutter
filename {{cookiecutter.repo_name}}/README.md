@@ -8,7 +8,7 @@
 Run `./scripts/bootstrap` in a terminal.  This will install
 `pip-tools` and sync the dependencies for the first time.
 
-To run the app you'll need to have Postgres running.  Create a
+To run the app, you'll need to have [postgres] running.  Create a
 database called `{{cookiecutter.package_name}}` and another called
 `{{cookiecutter.package_name}}_tests` and grant the `postgres` user
 access to both.  Finally, run `alembic upgrade head` to migrate the
@@ -20,7 +20,7 @@ database.
 Run `./scripts/runserver`.
 
 
-## Running an interactive interpreter
+## Running the interactive interpreter
 
 Run `./scripts/interpreter`.
 
@@ -57,9 +57,10 @@ Migrations are managed using [alembic].
 
 ## Testing
 
-Run the tests by invoking `py.test` in the project root.  Make sure to
+Run the tests by invoking `py.test` in the project root.  Make sure you
 run any pending migrations beforehand.
 
 
 [alembic]: http://alembic.zzzcomputing.com/en/latest/
 [pip-tools]: https://github.com/jazzband/pip-tools
+[postgres]: https://www.postgresql.org/
