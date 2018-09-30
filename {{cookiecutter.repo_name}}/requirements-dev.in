@@ -1,6 +1,8 @@
 flake8
 flake8-quotes
+gnureadline
 isort
 jedi
 pytest
 pytest-cov
+pytest-env

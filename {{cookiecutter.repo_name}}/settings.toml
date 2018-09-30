@@ -1,10 +1,14 @@
 [common]
-database_engine_dsn = "postgres://postgres:postgres@127.1:5432/{{cookiecutter.package_name}}"
+database_engine_dsn = "postgres://postgres:postgres@127.0.0.1:5432/{{cookiecutter.package_name}}"
 
 [common.whitenoise]
 root = "static"
 prefix = "/static"
 autorefresh = true
+
+
+[test]
+database_engine_dsn = "postgres://postgres:postgres@127.0.0.1:5432/{{cookiecutter.package_name}}_tests"
 
 
 [prod.whitenoise]

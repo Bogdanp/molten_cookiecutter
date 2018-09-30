@@ -1,10 +1,13 @@
-from molten.contrib.sqlalchemy import Session
 from sqlalchemy.ext.declarative import declarative_base
+
+from molten.contrib.sqlalchemy import Session
 
 Model = declarative_base()
 
 
 class Manager:
+    __slots__ = ["session"]
+
     def __init__(self, session):
         self.session = session
 
