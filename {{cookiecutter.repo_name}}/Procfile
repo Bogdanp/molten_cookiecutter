@@ -1,0 +1,1 @@
+web: ENVIRONMENT=prod gunicorn app:app

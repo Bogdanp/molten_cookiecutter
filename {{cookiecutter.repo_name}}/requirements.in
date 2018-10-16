@@ -1,5 +1,6 @@
 alembic
 gunicorn
+honcho
 jinja2
 molten
 psycopg2-binary

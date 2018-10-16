@@ -1,0 +1,1 @@
+web: PYTHONUNBUFFERED=x gunicorn app:app

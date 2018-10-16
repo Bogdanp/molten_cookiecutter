@@ -2,4 +2,4 @@
 
 set -euo pipefail
 
-gunicorn app:app
+honcho start -p 8000 -f Procfile.dev
